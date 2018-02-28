@@ -1,7 +1,7 @@
 # Payments -service
 
 This is a demo service which is used in the presentation and setup of
-[https://github.com/jerryjj/k8s-gke-deployment-tpl](Kubernetes - Happily in production).
+[Kubernetes - Happily in production](https://github.com/jerryjj/k8s-gke-deployment-tpl).
 
 ## Development
 
