@@ -1,0 +1,26 @@
+// Defines the Payments-service
+
+syntax = "proto3";
+
+package fi.qvik.payments;
+option go_package = "qvik.fi/payments;payments";
+
+service Payments {
+  // Returns available payment cards
+  rpc GetPSPStatus(GetPSPStatusRequest) returns (GetPSPStatusResponse) {}
+}
+
+// Status of an operation; included in a Response
+enum Status {
+  OK = 0;
+  ERROR = 1;
+}
+
+message GetPSPStatusRequest {
+}
+
+message GetPSPStatusResponse {
+  Status status = 1;
+  // Response status message
+  string status_message = 2;
+}
